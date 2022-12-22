@@ -1,3 +1,8 @@
+---
+layout: page
+title:  "Links"
+---
+
 # Working On
 [Bazog](https://bazog.com/), an AI-enabled app that lets you create short video slideshows from text And images
 
