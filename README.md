@@ -24,7 +24,7 @@ Most of these projects are incomplete and I might pick up some of them again lat
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.date }} <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
