@@ -19,3 +19,12 @@ Most of these projects are incomplete and I might pick up some of them again lat
 - [MBS Pricer](https://github.com/zainhoda/mbs-pricer/blob/main/Write%20Up/mbswriteup.pdf): A C++ Excel plugin that lets you put in assumptions and generate price estimations for mortgage-backed securities.
 - [Spinning Wheel](https://zainhoda.github.io/spinning-wheel/): A toy Elm app that I wrote to learn the basics of Elm. 
 - [Vizit](https://medium.com/@zain_hoda/vizit-what-a-mobile-app-looked-like-before-the-iphone-d436f781795d): A location-based mobile app for the Palm-treo. This pre-dates iPhone apps by several years. For positioning, it had a separate GPS attachment that plugged into a slot at the top of the phone.
+
+# Posts
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
