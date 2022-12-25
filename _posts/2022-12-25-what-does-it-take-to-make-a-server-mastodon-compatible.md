@@ -3,10 +3,6 @@ layout: post
 title:  "What Does It Take to Make a Server Mastodon-Compatible?"
 ---
 
-# What Does It Take to Make a Server Mastodon-Compatible?
-
-_2022-12-25_ by [Zain Hoda](/)
-
 ## Motivation
 
 I'm working on an [app](https://bazog.com/) (still very early beta) that happens to have the concept of [users](https://bazog.com/@decoder) and [posts](https://bazog.com/@decoder/EA32261154C54193B1F21443CBFF80C5). Some of our initial test users have expressed interest in the idea of "following" other accounts. I happen to have joined Mastodon recently so I was curious what it would take to just leverage that network for social functionality. I "livetooted" it [here](https://toot.io/@zain/109553219423059507). This post just recaps what I've learned. 
