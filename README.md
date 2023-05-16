@@ -5,6 +5,7 @@ permalink: /
 ---
 
 # What I'm Working On
+- [Vanna AI](https://vanna.ai): An AI business intelligence assistant that generates and executes SQL from natural language
 - [PyCob](https://www.pycob.com): Build Web Apps Using Just Python
 - [Bazog](https://bazog.com/): an AI-enabled app that lets you create short video slideshows from text and images
 - [Hownova](https://apps.apple.com/us/app/hownova/id1630216185): How-to videos you can actually use. Video for each step loops until you're ready to move to the next step. Available as an [App Clip](https://app.hownova.com/share/WkfplFDORE63tiTTahEr).
