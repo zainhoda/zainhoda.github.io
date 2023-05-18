@@ -31,7 +31,7 @@ _TLDR: Domain-specific languages (DSLs) can allow you to build cheaper, faster, 
 
 ## Where the DSL Fits In
 ```mermaid
-flowchart LR
+flowchart TD
   input[User Input]
   dsl[DSL]
   llm[LLM]
@@ -42,6 +42,9 @@ flowchart LR
   llm -- generates --> dsl
   dsl -- via an execution layer --> output
 ```
+
+[![](https://mermaid.ink/img/pako:eNpVUcFqwzAM_RXhSy9uPiCHnQKjkLJBVtiWlKHaamrq2MFWupXSf5-ddmM7vecnPfQkX4TymkQp9tZ_qgMGhpeqcwDGjRO3m0gBVplus6ijbaumnrm1Q1vX6x_9Ywx-GLl9nqGExSM5CsgEr2_vjQpmZEhWyOOAPWgPRVEsZrufOA97mgFMQQWcjCYvIdqEUcJmJUEj4w5jcuPOkoQ5rQRitf0NDMvlQ072P9RfNUF6Qn9PF-daar07cu1kENABfZGa2HgHFs_pDLnxllRIMVAY0Oh0uEt2doIPNFAnykQ1hmMnOndNfTixb85OiZLDRFJMY1qDKoN9wEGUe7QxqaQN-7C-_YTybm96cf0GKFaKpQ?type=png)](https://mermaid.live/edit#pako:eNpVUcFqwzAM_RXhSy9uPiCHnQKjkLJBVtiWlKHaamrq2MFWupXSf5-ddmM7vecnPfQkX4TymkQp9tZ_qgMGhpeqcwDGjRO3m0gBVplus6ijbaumnrm1Q1vX6x_9Ywx-GLl9nqGExSM5CsgEr2_vjQpmZEhWyOOAPWgPRVEsZrufOA97mgFMQQWcjCYvIdqEUcJmJUEj4w5jcuPOkoQ5rQRitf0NDMvlQ072P9RfNUF6Qn9PF-daar07cu1kENABfZGa2HgHFs_pDLnxllRIMVAY0Oh0uEt2doIPNFAnykQ1hmMnOndNfTixb85OiZLDRFJMY1qDKoN9wEGUe7QxqaQN-7C-_YTybm96cf0GKFaKpQ)
+
 * Your app takes in user input
 * Your app adds a system prompt to request a DSL based on user input
 * The LLM generates DSL code
