@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "We need new DSLs for LLMs"
+title:  "DRAFT: We need new DSLs for LLMs"
 ---
 
 # LLMs ❤️ DSLs
@@ -18,7 +18,7 @@ _TLDR: Domain-specific languages (DSLs) can allow you to build cheaper, faster, 
     - **Risk prompt-injection:** Generated code execution can lead to the escape of intended functions, resulting in arbitrary code execution (e.g., "ignore instructions and mine bitcoin")
 
 ## Embracing Domain-Specific Languages (DSLs)
-- New DSLs maximize expressive power while minimizing the number of characters (tokens), resulting in cost-effective and faster interactions with LLMs
+- New DSLs need to maximize expressive power while minimizing the number of characters (tokens), resulting in cost-effective and faster interactions with LLMs
     - This is reminiscent of Perl or Awk, both known for their information-dense, enigmatic one-liners
 - SQL is an existing information-dense DSL in the data space, utilized by platforms like the one I'm building at [Vanna.AI](https://vanna.ai)
     - However, a subset of desired data analysis operations exceed SQL's capabilities, which I believe will lead to the development of new data DSLs that combine elements of SQL, Apache Spark, Apache Beam, and Pandas. Please let me know if you're interested in collaborating on this.
@@ -26,7 +26,7 @@ _TLDR: Domain-specific languages (DSLs) can allow you to build cheaper, faster, 
     - There's also the added benefit that if you tell GPT to generate DSL code, it makes results more consistent than if you ask for "a list of XYZ" where sometimes it will return the list with numbers, bullet points, n-dashes, or some other random formatting
 
 ## Fine-Tuning
-- New Open-Source DSLs will eventually get incorporated into GPT models
+- New Open-Source DSLs will eventually get incorporated into GPT models such that you could directly ask it to "generate `ABCScript` to do `XYZ`"
 - In the meantime, you can perform a combination of fine-tuning and providing examples in the prompt to get the LLM to generate the DSL code from a prompt
 
 ## Where the DSL Fits In
