@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "DRAFT: We need new DSLs for LLMs"
+title:  "We need new DSLs for the era of LLMs"
 ---
 
 # LLMs ❤️ DSLs
@@ -8,7 +8,7 @@ title:  "DRAFT: We need new DSLs for LLMs"
 _TLDR: Domain-specific languages (DSLs) can allow you to build cheaper, faster, and prompt-injection-resistant AI agents_
 
 ## Large-Language Models (LLMs)
-- LLMs like GPT-3.5 and GPT-4 are really good and efficient at interpreting and generating code when the code has high information density
+- LLMs like GPT-3.5 and GPT-4 are really good and efficient at interpreting and generating code especially when the code has high information density
 - Because ChatGPT consumes and outputs tokens, for speed and cost, you want to minimize the number of tokens in a prompt / output 
 
 ## The Evolution to AI Agents
@@ -22,7 +22,7 @@ _TLDR: Domain-specific languages (DSLs) can allow you to build cheaper, faster, 
     - This is reminiscent of Perl or Awk, both known for their information-dense, enigmatic one-liners
 - SQL is an existing information-dense DSL in the data space, utilized by platforms like the one I'm building at [Vanna.AI](https://vanna.ai)
     - However, a subset of desired data analysis operations exceed SQL's capabilities, which I believe will lead to the development of new data DSLs that combine elements of SQL, Apache Spark, Apache Beam, and Pandas. Please let me know if you're interested in collaborating on this.
-- Parsing and limiting DSLs to specific tasks makes it easier to avoid prompt injection since you're not executing arbitrary Python code
+- Parsing and limiting DSLs to specific tasks makes it easier to avoid prompt injection since you're not executing arbitrary code
     - There's also the added benefit that if you tell GPT to generate DSL code, it makes results more consistent than if you ask for "a list of XYZ" where sometimes it will return the list with numbers, bullet points, n-dashes, or some other random formatting
 
 ## Fine-Tuning
