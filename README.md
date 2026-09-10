@@ -2,7 +2,7 @@
 
 Personal website for **zain-hoda.com**, hosted from this repository with GitHub Pages.
 
-A custom, responsive Jekyll site with no client-side JavaScript, tracking scripts, external fonts, or theme dependency. The homepage introduces Zain's enterprise AI work and links to The AI Adoption Gap on Substack. Published technical posts retain their existing URLs and are linked from `/writing/`.
+A custom, responsive Jekyll site with a small script for interactive company cards and no tracking scripts, external fonts, or theme dependency. The homepage introduces Zain's enterprise AI work and links to The AI Adoption Gap on Substack. Published technical posts retain their existing URLs and are linked from `/writing/`.
 
 ## Local development
 
@@ -33,6 +33,15 @@ The newsletter button links to `https://zainhoda.substack.com/subscribe`. Set `b
 
 ## GitHub Pages and the domain
 
-This site uses GitHub Pages' native Jekyll build. In the repository's **Settings → Pages**, select the intended publishing branch and its root directory. No separate Node build or workflow is needed.
+This site uses GitHub Pages' native Jekyll build from the `main` branch and root directory. No separate Node build or workflow is needed. Pushes to `main` publish automatically.
 
-`CNAME` and the canonical URL are set to `zain-hoda.com`. Publishing the repository alone does not configure the domain's DNS: point the domain at GitHub Pages, add it in the Pages settings, and enable HTTPS after GitHub provisions the certificate. Verify that `zain@vanna.ai` receives email before launch.
+`CNAME`, the canonical URL, and the GitHub Pages custom domain are set to `zain-hoda.com`.
+
+Cloudflare DNS is managed under **Zain Hoda Personal**, using `aisha.ns.cloudflare.com` and `sage.ns.cloudflare.com`:
+
+| Type | Name | Target | Proxy status |
+| --- | --- | --- | --- |
+| CNAME | `@` | `zainhoda.github.io` | DNS only |
+| CNAME | `www` | `zainhoda.github.io` | DNS only |
+
+Cloudflare flattens the apex CNAME into GitHub Pages IP addresses. GitHub Pages handles the `www` redirect and TLS certificate. Enable **Enforce HTTPS** in Pages settings once the certificate is available. The existing mail-related TXT records are preserved; the site's contact address is `zain@vanna.ai`.
