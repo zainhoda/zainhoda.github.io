@@ -1,4 +1,8 @@
-# From UI to AI
+---
+layout: post
+title: "From UI to AI"
+description: "How AI agents could reshape enterprise software, from interface-heavy applications to systems built around intent, constraints, and legacy integration."
+---
 
 ---
 

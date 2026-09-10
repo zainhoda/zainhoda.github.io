@@ -1,0 +1,45 @@
+{%- if page.seo_title -%}
+  {%- assign seo_title = page.seo_title -%}
+{%- elsif page.title -%}
+  {%- capture seo_title -%}{{ page.title }} — {{ site.title }}{%- endcapture -%}
+{%- else -%}
+  {%- assign seo_title = site.seo_title -%}
+{%- endif -%}
+{%- assign seo_description = page.description -%}
+{%- if seo_description == nil and page.layout == 'post' -%}
+  {%- assign seo_description = page.excerpt | strip_html | normalize_whitespace | truncate: 160 -%}
+{%- endif -%}
+{%- assign seo_description = seo_description | default: site.description -%}
+{%- assign canonical_url = page.url | absolute_url -%}
+{%- assign social_image = page.social_image | default: site.social_image | absolute_url -%}
+{%- assign social_image_alt = page.social_image_alt | default: site.social_image_alt -%}
+<title>{{ seo_title | escape }}</title>
+<meta name="description" content="{{ seo_description | escape }}">
+<meta name="author" content="{{ site.title | escape }}">
+<meta name="robots" content="{{ page.robots | default: 'index, follow, max-image-preview:large' | escape }}">
+<link rel="canonical" href="{{ canonical_url }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:title" content="{{ seo_title | escape }}">
+<meta property="og:description" content="{{ seo_description | escape }}">
+<meta property="og:url" content="{{ canonical_url }}">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="{{ social_image }}">
+<meta property="og:image:secure_url" content="{{ social_image }}">
+<meta property="og:image:type" content="{{ page.social_image_type | default: 'image/jpeg' | escape }}">
+<meta property="og:image:width" content="{{ page.social_image_width | default: 1200 }}">
+<meta property="og:image:height" content="{{ page.social_image_height | default: 630 }}">
+<meta property="og:image:alt" content="{{ social_image_alt | escape }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ seo_title | escape }}">
+<meta name="twitter:description" content="{{ seo_description | escape }}">
+<meta name="twitter:image" content="{{ social_image }}">
+<meta name="twitter:image:alt" content="{{ social_image_alt | escape }}">
+{% if page.layout == 'post' %}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+<meta property="article:author" content="{{ '/' | absolute_url }}">
+{% if page.last_modified_at %}<meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+{% endif %}
+{% unless page.robots contains 'noindex' %}
+{% include structured-data.html %}
+{% endunless %}

@@ -1,0 +1,48 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": {{ '/#person' | absolute_url | jsonify }},
+      "name": "Zain Hoda",
+      "url": {{ '/' | absolute_url | jsonify }},
+      "image": {{ '/assets/img/zain.jpeg' | absolute_url | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "jobTitle": "AI consultant and founder of Vanna AI",
+      "sameAs": ["https://github.com/zainhoda", "https://zainhoda.substack.com"],
+      "knowsAbout": ["AI adoption", "AI consulting", "AI training", "Software development", "AI agents", "Production AI deployments"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ '/#website' | absolute_url | jsonify }},
+      "url": {{ '/' | absolute_url | jsonify }},
+      "name": "Zain Hoda",
+      "inLanguage": "en",
+      "publisher": {"@id": {{ '/#person' | absolute_url | jsonify }}}
+    },
+    {
+      "@type": "{% if page.layout == 'post' %}BlogPosting{% elsif page.url == '/' %}ProfilePage{% elsif page.url == '/writing/' %}CollectionPage{% else %}WebPage{% endif %}",
+      "@id": {{ canonical_url | append: '#webpage' | jsonify }},
+      "url": {{ canonical_url | jsonify }},
+      "name": {{ seo_title | jsonify }},
+      "description": {{ seo_description | jsonify }},
+      "inLanguage": "en",
+      "isPartOf": {"@id": {{ '/#website' | absolute_url | jsonify }}},
+      "image": {
+        "@type": "ImageObject",
+        "url": {{ social_image | jsonify }},
+        "width": {{ page.social_image_width | default: 1200 }},
+        "height": {{ page.social_image_height | default: 630 }}
+      }{% if page.url == '/' %},
+      "mainEntity": {"@id": {{ '/#person' | absolute_url | jsonify }}}{% endif %}{% if page.layout == 'post' %},
+      "headline": {{ page.title | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      {% if page.last_modified_at %}"dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }},{% endif %}
+      "author": {"@id": {{ '/#person' | absolute_url | jsonify }}},
+      "publisher": {"@id": {{ '/#person' | absolute_url | jsonify }}},
+      "mainEntityOfPage": {{ canonical_url | jsonify }}{% endif %}
+    }
+  ]
+}
+</script>

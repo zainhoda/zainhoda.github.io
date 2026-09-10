@@ -1,9 +1,12 @@
 title: Zain Hoda
+seo_title: "Zain Hoda — AI Consulting, Training & Production Deployments"
 description: "I help companies drive real business outcomes using AI. I train teams, build software, and put AI to work in everyday operations."
+social_image: /assets/og/zain-hoda.jpg
+social_image_alt: "Zain Hoda beside the words Get results with AI. Applied AI. Lasting impact."
 url: https://zain-hoda.com
 baseurl: ""
 email: zain@vanna.ai
-# Add the live destinations here when available. Empty values use email links.
+# Meeting and newsletter destinations.
 booking_url: "https://cal.com/zainhoda/30min"
 newsletter_url: "https://zainhoda.substack.com/subscribe"
 markdown: kramdown
@@ -15,6 +18,8 @@ defaults:
       type: posts
     values:
       layout: post
+      social_image: /assets/og/writing.jpg
+      social_image_alt: "Zain Hoda — Notes from the work. Essays on AI and building software."
 exclude:
   - README.md
   - Gemfile

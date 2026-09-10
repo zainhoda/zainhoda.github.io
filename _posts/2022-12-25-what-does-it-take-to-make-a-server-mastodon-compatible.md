@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "What Does It Take to Make a Server Mastodon-Compatible?"
+description: "A practical walkthrough of Mastodon compatibility: WebFinger, ActivityPub, HTTP signatures, and the requests needed to connect a server to the Fediverse."
 ---
 
 ## Motivation

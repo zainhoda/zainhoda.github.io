@@ -31,6 +31,18 @@ The generated site is in `_site/`, which is excluded from Git.
 
 The newsletter button links to `https://zainhoda.substack.com/subscribe`. The “Let’s talk” buttons use `booking_url` in `_config.yaml` to open `https://cal.com/zainhoda/30min`. Direct email contact remains `zain@vanna.ai`.
 
+## Search and social previews
+
+`_includes/seo.html` renders unique search titles and descriptions, canonical URLs, Open Graph tags, and large X/Twitter cards. `_includes/structured-data.html` adds Person, WebSite, and page/article JSON-LD. The 404 page is marked `noindex`; `/robots.txt` points crawlers to `/sitemap.xml`.
+
+The homepage uses `assets/og/zain-hoda.jpg`; the writing archive and articles use `assets/og/writing.jpg`. Both are optimized 1200 × 630 JPEGs. Generation prompts are saved in `scripts/og-prompts.md`.
+
+Add a specific `description` to each post. Override `seo_title`, `social_image`, and `social_image_alt` in front matter when needed. For images with different dimensions or formats, also set `social_image_width`, `social_image_height`, and `social_image_type`. Published article URLs stay unchanged.
+
+Run `python3 scripts/check-seo.py` after a production build to check all public pages, structured data, image files, and sitemap coverage. Metadata follows the [Open Graph protocol](https://ogp.me/) and [Google's profile page documentation](https://developers.google.com/search/docs/appearance/structured-data/profile-page).
+
+For search indexing, verify this domain in Google Search Console and submit `https://zain-hoda.com/sitemap.xml`. Sitemap discovery and metadata do not guarantee indexing or rankings; no Search Console submission has been made by this repository setup.
+
 ## GitHub Pages and the domain
 
 This site uses GitHub Pages' native Jekyll build from the `main` branch and root directory. No separate Node build or workflow is needed. Pushes to `main` publish automatically.
