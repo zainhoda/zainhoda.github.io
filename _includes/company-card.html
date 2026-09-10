@@ -16,7 +16,7 @@
       <div class="company-back">
         <h3>{{ company.name }}</h3>
         <p>{{ company.work }}</p>
-        <span class="company-close" aria-hidden="true">↩</span>
+        <span class="company-close" aria-hidden="true">{% include symbol.html name="return" %}</span>
       </div>
       {% endif %}
     </details>
