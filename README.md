@@ -44,4 +44,4 @@ Cloudflare DNS is managed under **Zain Hoda Personal**, using `aisha.ns.cloudfla
 | CNAME | `@` | `zainhoda.github.io` | DNS only |
 | CNAME | `www` | `zainhoda.github.io` | DNS only |
 
-Cloudflare flattens the apex CNAME into GitHub Pages IP addresses. GitHub Pages handles the `www` redirect and TLS certificate. Enable **Enforce HTTPS** in Pages settings once the certificate is available. The existing mail-related TXT records are preserved; the site's contact address is `zain@vanna.ai`.
+Cloudflare flattens the apex CNAME into GitHub Pages IP addresses. GitHub Pages handles the `www` redirect and TLS certificate. **Enforce HTTPS** is enabled in Pages settings; both HTTP and `www` requests redirect to `https://zain-hoda.com/`. The existing mail-related TXT records are preserved; the site's contact address is `zain@vanna.ai`.
