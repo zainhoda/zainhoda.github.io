@@ -10,7 +10,7 @@ permalink: /writing/
   <header class="page-header"><p class="eyebrow">From the archive</p><h1>Earlier writing<span class="accent">.</span></h1><p>Essays and technical notes from building software.</p></header>
   <ul class="post-list">
     {% for post in site.posts %}
-    <li><a href="{{ post.url | relative_url }}"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %d, %Y' }}</time><h2>{{ post.title | escape }}</h2><span aria-hidden="true">↗</span></a></li>
+    <li><a href="{{ post.url | relative_url }}"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %d, %Y' }}</time><h2>{{ post.title | escape }}</h2><span aria-hidden="true">{% include arrow-up-right.html %}</span></a></li>
     {% endfor %}
   </ul>
 </div>

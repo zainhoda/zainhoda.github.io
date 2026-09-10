@@ -3,14 +3,14 @@
       <summary aria-label="{{ company.name | escape }} — explore the work">
         <span class="company-front">
           <img src="{{ company.logo | relative_url }}" alt="{{ company.name | escape }}" loading="lazy" width="180" height="72">
-          <span class="company-reveal" aria-hidden="true">↗</span>
+          <span class="company-reveal" aria-hidden="true">{% include arrow-up-right.html %}</span>
         </span>
       </summary>
       {% if company.url %}
       <a class="company-back company-back-link" href="{{ company.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ company.name | escape }}: {{ company.article_title | escape }} (opens in a new tab)">
         <h3>{{ company.name }}</h3>
         <p>{{ company.article_title }}</p>
-        <span class="company-article-cta">{{ company.link_label }} <span aria-hidden="true">↗</span></span>
+        <span class="company-article-cta">{{ company.link_label }} <span aria-hidden="true">{% include arrow-up-right.html %}</span></span>
       </a>
       {% else %}
       <div class="company-back">
