@@ -1,6 +1,23 @@
-theme: minima
 title: Zain Hoda
-description: Technical Blog
-
-minima:
-  skin: auto
+description: "I help companies drive real business outcomes using AI. I train teams, build software, and put AI to work in everyday operations."
+url: https://zain-hoda.com
+baseurl: ""
+email: zain@vanna.ai
+# Add the live destinations here when available. Empty values use email links.
+booking_url: ""
+newsletter_url: "https://zainhoda.substack.com/subscribe"
+markdown: kramdown
+kramdown:
+  input: GFM
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts

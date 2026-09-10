@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="wrap">
+  <header class="post-header">
+    <a class="back-link" href="{{ '/writing/' | relative_url }}">← Earlier writing</a>
+    <p class="eyebrow"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %d, %Y' }}</time> / Zain Hoda</p>
+    <h1>{{ page.title | escape }}</h1>
+  </header>
+  <div class="prose">{{ content }}</div>
+</article>

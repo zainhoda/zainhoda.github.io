@@ -1,0 +1,23 @@
+[
+  {
+    "name": "NVIDIA",
+    "logo": "/assets/logos/nvidia.svg",
+    "url": "https://developer.nvidia.com/blog/accelerating-text-to-sql-inference-on-vanna-with-nvidia-nim-for-faster-analytics/",
+    "article_title": "Accelerating Text-to-SQL Inference on Vanna with NVIDIA NIM for Faster Analytics",
+    "link_label": "Read the blog post"
+  },
+  {
+    "name": "Microsoft",
+    "logo": "/assets/logos/microsoft.svg",
+    "url": "https://devblogs.microsoft.com/azure-sql/vanna-ai-and-azure-sql-database/",
+    "article_title": "Vanna.ai and Azure SQL Database",
+    "link_label": "Read the blog post"
+  },
+  {
+    "name": "Google Cloud",
+    "logo": "/assets/logos/google-cloud.svg",
+    "url": "https://docs.cloud.google.com/bigquery/docs/bigquery-ready-partners#vanna.ai",
+    "article_title": "Vanna AI in Google Cloud Ready — BigQuery Partners",
+    "link_label": "View the partner page"
+  }
+]

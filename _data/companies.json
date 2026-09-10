@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Ford",
+    "logo": "/assets/logos/ford.svg",
+    "work": "Built a dealer sales analytics portal for Ford Mexico, giving dealerships a way to explore their sales data through natural-language questions."
+  },
+  {
+    "name": "Volvo",
+    "logo": "/assets/logos/volvo.svg",
+    "work": "Enabled analysis of vehicle telemetry data using locally deployed small language models (SLMs)."
+  },
+  {
+    "name": "Brynson",
+    "logo": "/assets/logos/brynson.svg",
+    "work": "Brought answers from real-estate data directly to customers through an AI assistant inside Brynson’s platform."
+  },
+  {
+    "name": "OPTX",
+    "logo": "/assets/logos/optx.svg",
+    "work": "Brought natural-language data exploration into OPTX’s casino analytics product, helping users ask questions in the platform they already used."
+  },
+  {
+    "name": "Comerc Energia",
+    "logo": "/assets/logos/comerc.svg",
+    "work": "Gave internal analysts natural-language access to company data, helping them explore questions without writing SQL for each one."
+  },
+  {
+    "name": "Tesla",
+    "logo": "/assets/logos/tesla.png",
+    "work": "Confidential use case"
+  }
+]

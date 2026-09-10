@@ -1,0 +1,6 @@
+Mode: Built-in image generation (style transfer).
+Source: assets/img/zain.jpeg, normalized to PNG before generation.
+Master output: assets/img/zain-icon.png
+Exports: assets/favicon-32.png, assets/favicon-192.png, assets/apple-touch-icon.png
+
+Use case: style-transfer. Asset type: square personal website favicon. Input image: reference portrait of Zain Hoda, preserve his recognizable likeness. Create a single finished icon, not a mockup or sheet: tightly framed bald head and face, dark eyebrows, friendly smile and distinctive dark goatee from the portrait. Flat editorial vector-like illustration using only warm ivory #f1f0eb, charcoal #0b0b0b and one medium gray. Solid charcoal square background edge to edge. Face fills about 85 percent of the square, centered, with a small margin above the head and below chin; omit body, arms, shirt and all props. Simplify features into bold clean shapes so it reads well at 16 and 32 pixels. No thin strokes, no photographic texture, no gradients, no lettering, no borders, no watermark. Keep the person's face shape, facial hair and friendly expression. Produce one square PNG.

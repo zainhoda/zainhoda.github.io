@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title | escape }} — {% endif %}{{ site.title | escape }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <meta name="theme-color" content="#0b0b0b">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+    <meta property="og:title" content="{{ page.title | default: 'Zain Hoda — Get results with AI' | escape }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:site_name" content="Zain Hoda">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="{{ '/assets/favicon-circle.svg' | relative_url }}" type="image/svg+xml" sizes="any">
+    <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | relative_url }}" sizes="180x180">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="masthead{% if page.hero_style == 'portrait' %} masthead-dark{% endif %}">
+    <header class="site-header wrap">
+      <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Zain Hoda, home">Zain Hoda<span class="wordmark-dot" aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="{{ '/#writing' | relative_url }}">Writing</a>
+        <a href="{{ '/#contact' | relative_url }}">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    </div>
+    <main id="main">{{ content }}</main>
+    <footer class="site-footer wrap">
+      <a class="wordmark" href="{{ '/' | relative_url }}">Zain Hoda<span class="wordmark-dot" aria-hidden="true">.</span></a>
+      <p>Applied AI. Lasting impact.</p>
+      <span class="copyright">© {{ site.time | date: '%Y' }} Zain Hoda</span>
+    </footer>
+  </body>
+</html>

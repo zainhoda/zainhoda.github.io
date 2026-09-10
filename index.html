@@ -1,0 +1,118 @@
+---
+layout: default
+hero_style: portrait
+---
+<section class="portrait-hero" aria-labelledby="hero-title">
+  <div class="portrait-stage wrap">
+    <div class="portrait-meta">
+      <p>Enterprise AI.<br>Built for production.</p>
+      <a href="#writing">Writing<br><span>The AI Adoption Gap ↗</span></a>
+    </div>
+    <div class="portrait-image">
+      <img src="{{ '/assets/img/zain.jpeg' | relative_url }}" alt="Zain Hoda" width="3024" height="4032" fetchpriority="high">
+    </div>
+    <h1 id="hero-title">Zain Hoda<span aria-hidden="true">.</span></h1>
+    <div class="portrait-intro">
+      <p>I help companies drive real business outcomes using AI. I train teams, build software, and put AI to work in everyday operations.</p>
+      <a class="portrait-cta" href="{% include booking-link.html %}">Let’s talk <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <div class="hero-thesis">
+    <p class="wrap"><span>Get results with AI.</span><span class="thesis-dot" aria-hidden="true">✳</span><span>Built. Deployed. Working.</span></p>
+  </div>
+</section>
+
+<section class="credentials-section wrap" aria-labelledby="experience-title">
+  <p class="eyebrow" id="experience-title">Built on experience</p>
+  <div class="vanna-feature">
+    <div>
+      <p class="vanna-role">Founder &amp; builder</p>
+      <a class="vanna-name" href="https://vanna.ai">Vanna AI<span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="vanna-story">
+      <p>I built Vanna to help people get answers from their data using AI. That work took me from open-source software to production deployments inside real businesses.</p>
+      <a href="https://github.com/vanna-ai/vanna"><strong>20K+</strong> GitHub stars <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <div class="experience-history">
+    <p class="eyebrow">Earlier experience</p>
+    <div class="experience-logos" aria-label="BlackRock, BNY Mellon, Bloomberg, SAP">
+      <img src="{{ '/assets/logos/blackrock.svg' | relative_url }}" alt="BlackRock" width="190" height="52" loading="lazy">
+      <img src="{{ '/assets/logos/bny-mellon.svg' | relative_url }}" alt="BNY Mellon" width="190" height="52" loading="lazy">
+      <img src="{{ '/assets/logos/bloomberg.svg' | relative_url }}" alt="Bloomberg" width="190" height="52" loading="lazy">
+      <img src="{{ '/assets/logos/sap.svg' | relative_url }}" alt="SAP" width="190" height="52" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="companies-section wrap" aria-labelledby="companies-title">
+  <div class="companies-heading">
+    <div><p class="eyebrow">The work, in good company</p><h2 id="companies-title">Companies I’ve helped.</h2></div>
+    <p class="companies-hint">Explore the work <span aria-hidden="true">↙</span></p>
+  </div>
+  <div class="company-grid">
+    {% for company in site.data.companies %}
+    {% include company-card.html company=company %}
+    {% endfor %}
+  </div>
+</section>
+<section class="companies-section partners-section wrap" aria-labelledby="partners-title">
+  <div class="companies-heading">
+    <div><h2 id="partners-title">Companies I’ve partnered with.</h2></div>
+  </div>
+  <div class="company-grid partner-grid">
+    {% for company in site.data.partners %}
+    {% include company-card.html company=company %}
+    {% endfor %}
+  </div>
+</section>
+<script src="{{ '/assets/js/company-cards.js' | relative_url }}" defer></script>
+
+<section class="process-section" aria-labelledby="process-title">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="eyebrow">01 / How I work</p>
+      <h2 id="process-title">From first use<br>to everyday impact.</h2>
+    </div>
+    <ol class="process-grid">
+      <li><div class="step-top"><span class="step-number">01</span><span aria-hidden="true">→</span></div><h3>Discover</h3><p>Understand the workflow and the result that would make a difference.</p></li>
+      <li><div class="step-top"><span class="step-number">02</span><span aria-hidden="true">→</span></div><h3>Decide</h3><p>Choose a focused use case and define what success looks like.</p></li>
+      <li><div class="step-top"><span class="step-number">03</span><span aria-hidden="true">→</span></div><h3>Build</h3><p>Build and evaluate against your real data, tools, and business rules.</p></li>
+      <li class="own-step"><div class="step-top"><span class="step-number">04</span><span aria-hidden="true">↗</span></div><h3>Own</h3><p>Deploy, monitor, and improve as your team puts it to work.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="engagements" aria-labelledby="engagements-title">
+  <div class="wrap">
+  <div class="section-heading">
+    <p class="eyebrow">02 / Three ways in</p>
+    <h2 id="engagements-title">Start where you are.</h2>
+  </div>
+  <div class="engagement-list">
+    <article class="engagement"><span class="row-number" aria-hidden="true">01</span><h3>Fractional Head of AI</h3><p>Set priorities, lead production deployments, and build your team’s capability.</p><span class="row-mark" aria-hidden="true">↗</span></article>
+    <article class="engagement"><span class="row-number" aria-hidden="true">02</span><h3>Support for your Head of AI</h3><p>Add hands-on engineering and product judgment to get important projects shipped.</p><span class="row-mark" aria-hidden="true">↗</span></article>
+    <article class="engagement"><span class="row-number" aria-hidden="true">03</span><h3>Team enablement</h3><p>Help your team build, evaluate, and maintain AI systems.</p><span class="row-mark" aria-hidden="true">↗</span></article>
+  </div>
+  </div>
+</section>
+
+<section class="writing-section wrap" id="writing" aria-labelledby="writing-title">
+  <div class="newsletter">
+    <div class="newsletter-intro"><p class="eyebrow">03 / The writing</p><span class="newsletter-symbol" aria-hidden="true">↗</span></div>
+    <div class="newsletter-body"><h2 id="writing-title">The AI<br>Adoption Gap<span>.</span></h2><div class="newsletter-description"><p>Weekly, on why enterprise AI<br class="desktop-break"> works or doesn’t.</p>
+      {% if site.newsletter_url != empty %}
+      <a class="button button-light" href="{{ site.newsletter_url }}">Subscribe <span aria-hidden="true">↗</span></a>
+      {% else %}
+      <a class="button button-light" href="mailto:{{ site.email }}?subject=The%20AI%20Adoption%20Gap&amp;body=Hi%20Zain%2C%0A%0AI%E2%80%99d%20like%20to%20hear%20when%20the%20next%20issue%20is%20available.">Get the next issue <span aria-hidden="true">↗</span></a>
+      <p class="newsletter-note">Send me an email to stay in the loop.</p>
+      {% endif %}
+    </div></div>
+  </div>
+  <a class="archive-link" href="{{ '/writing/' | relative_url }}">Earlier writing <span aria-hidden="true">↗</span></a>
+</section>
+
+<section class="contact-section wrap" id="contact" aria-labelledby="contact-title">
+  <p class="eyebrow">Let’s talk</p>
+  <div class="contact-body"><h2 id="contact-title">What could AI<br>do for your business?</h2><div class="contact-actions"><a class="button" href="{% include booking-link.html %}">Let’s talk <span aria-hidden="true">↗</span></a><a class="email-link" href="mailto:{{ site.email }}">{{ site.email }} <span aria-hidden="true">↗</span></a></div></div>
+</section>
