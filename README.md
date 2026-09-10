@@ -29,7 +29,7 @@ The generated site is in `_site/`, which is excluded from Git.
 - `_layouts/`: shared page shell and article layout.
 - `_posts/`: the three original articles, with their existing URLs. Add YAML front matter with a title when creating a new post.
 
-The newsletter button links to `https://zainhoda.substack.com/subscribe`. Set `booking_url` in `_config.yaml` to enable direct scheduling. Until then, the call buttons open an email requesting a 30-minute conversation at `zain@vanna.ai`.
+The newsletter button links to `https://zainhoda.substack.com/subscribe`. The “Let’s talk” buttons use `booking_url` in `_config.yaml` to open `https://cal.com/zainhoda/30min`. Direct email contact remains `zain@vanna.ai`.
 
 ## GitHub Pages and the domain
 

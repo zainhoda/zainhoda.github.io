@@ -4,7 +4,7 @@ url: https://zain-hoda.com
 baseurl: ""
 email: zain@vanna.ai
 # Add the live destinations here when available. Empty values use email links.
-booking_url: ""
+booking_url: "https://cal.com/zainhoda/30min"
 newsletter_url: "https://zainhoda.substack.com/subscribe"
 markdown: kramdown
 kramdown:
